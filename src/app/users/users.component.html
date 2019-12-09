@@ -1,6 +1,6 @@
 <nb-layout-header class="header">
-  <h5>Welcome to User's page !</h5></nb-layout-header
->
+  <h5>Welcome to User's page !</h5>
+</nb-layout-header>
 <div *ngIf="user">
   <table class="table">
     <thead style="background-color:rgb(103, 126, 112)">
@@ -9,14 +9,17 @@
         <th scope="col">Name</th>
         <th scope="col">Company Name</th>
         <th scope="col">Phone #</th>
+        <th scope="col">Email</th>
+
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">{{ user.id }}</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td> {{user.username}}</td>
+        <td> {{user.company}} </td>
+        <td> {{user.phone}} </td>
+        <td> {{user.email}} </td>
       </tr>
     </tbody>
   </table>

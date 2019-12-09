@@ -8,12 +8,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UsersComponent {
   user = null;
+  name = null;
+  company =null;
+  phone = null;
 
   // 1- inject HttpClient service in constructor
   // 2- update user value with httpClient response data
   constructor(private http: HttpClient) {
     http
-      .get('https://jsonplaceholder.typicode.com/users/4')
+      .get('https://jsonplaceholder.typicode.com/users/3')
       .subscribe(response => {
         this.user = response;
       });

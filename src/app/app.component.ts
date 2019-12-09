@@ -28,6 +28,13 @@ export class AppComponent {
       link: '/posts',
       home: false,
       children: undefined
+    },  
+    {
+      title: 'todo',
+      icon: 'bell-outline',
+      link: '/todo',
+      home: false,
+      children: undefined
     }
   ];
   constructor(private sidebarService: NbSidebarService) {}

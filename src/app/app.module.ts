@@ -19,9 +19,10 @@ import { UsersComponent } from './users/users.component';
 import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent, HomeComponent, PostsComponent],
+  declarations: [AppComponent, UsersComponent, HomeComponent, PostsComponent, TodoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
