@@ -20,9 +20,10 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoComponent } from './todo/todo.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent, HomeComponent, PostsComponent, TodoComponent],
+  declarations: [AppComponent, UsersComponent, HomeComponent, PostsComponent, TodoComponent, CommentsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

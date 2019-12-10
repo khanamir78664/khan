@@ -28,16 +28,23 @@ export class AppComponent {
       link: '/posts',
       home: false,
       children: undefined
-    },  
+    },
     {
       title: 'todo',
       icon: 'bell-outline',
       link: '/todo',
       home: false,
       children: undefined
+    },
+    {
+      title: 'Comment',
+      icon: 'email-outline',
+      link: '/comments',
+      home: false,
+      children: undefined
     }
   ];
-  constructor(private sidebarService: NbSidebarService) {}
+  constructor(private sidebarService: NbSidebarService) { }
 
   toggle() {
     this.sidebarService.toggle(true);
