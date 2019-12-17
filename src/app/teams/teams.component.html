@@ -1,0 +1,27 @@
+<button type="button" (click)="getdata()">Click to write name !</button>
+<table class="table">
+    <thead style="background-color: blue ;">
+        <tr>
+            <th scope="col"> Team Name</th>
+            <th scope="col">Points</th>
+            <th scope="col">Won</th>
+            <th scope="col">Lost</th>
+            <th scope="col">Draw</th>
+            <th scope="col">Total Matches</th>
+
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tp of teamPoints">
+            <th> {{tp.name}} </th>
+            <th> {{tp.points}} </th>
+            <th> {{tp.won}} </th>
+            <th> {{tp.lost}} </th>
+            <th> {{tp.draw}} </th>
+            <th> {{tp.totalMatches}} </th>
+        </tr>
+    </tbody>
+</table>
+{{name}}

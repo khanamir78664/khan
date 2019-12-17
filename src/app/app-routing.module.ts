@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { TodoComponent } from "./todo/todo.component";
 import { CommentsComponent } from './comments/comments.component';
+import { TeamsComponent } from './teams/teams.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'posts', component: PostsComponent },
   { path: 'todo', component: TodoComponent },
   { path: 'comments', component: CommentsComponent },
+  { path: 'teams', component: TeamsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' }
 ];

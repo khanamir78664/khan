@@ -42,6 +42,13 @@ export class AppComponent {
       link: '/comments',
       home: false,
       children: undefined
+    },
+    {
+      title: 'teams',
+      icon: 'email-outline',
+      link: '/teams',
+      home: false,
+      children: undefined
     }
   ];
   constructor(private sidebarService: NbSidebarService) { }
